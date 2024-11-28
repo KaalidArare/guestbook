@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GuestBook</title>
+    
+    <!--favicon-->
+    <link href="Images/images.png" rel="icon">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form method="post" action="/submit">
+        <fieldset>
+            <div id="labels">
+                <h1>Contact Form</h1>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname">
+                        
+                        <span id="err-fname" class="err">
+                            Field Is Required!
+                        </span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname">
+                        <span id="err-lname" class="err">
+                            Field Is Required!
+                        </span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="job">Job Title</label>
+                        <input type="text" id="job" name="job">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="linkedln">LinkedIn URL</label>
+                        <input type="url" id="linkedln" name="linkedln">
+                        <span id="err-linkedln" class="err">
+                            Linkedln URL must begin with "https://linkedln.com/in/" 
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                        <span id="err-email" class="err">
+                            This field is Optional! (if entered it must 
+                            contain @ symbol and a dot (.))
+                        </span>
+                        <span id="err-email2" class="err">
+                            Email is Required if requested to add to mailing list!
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="meet">How Did we meet?</label>
+                        <select id="meet" name="meet">
+                            <option>Please select</option>
+                            <option>Meet Up</option>
+                            <option>Job Fair</option>
+                            <option>LinkedIn</option>
+                            <option>Indeed</option>
+                            <option>Other</option>
+                        </select>
+                        <span id="err-options" class="err">
+                            Choosing an input is required!
+                        </span>
+                    </div>
+                    <div class="form-group" id="other">
+                        <label for="other">Other (please specify)</label>
+                        <input type="text" name="other" id="other2">
+                    </div>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea rows="6" id="message" name="message"></textarea>
+                
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="checkbox" name="subscribe"> Please add me to your mailing list</label>
+                </div>
+                <div class="check">
+                    <label>Choose an email format:</label>
+                    <label>HTML</label><input type="radio" name="format" value="text">&nbsp;
+                    <label>Text</label><input type="radio" name="format" value="text">
+                </div>
+
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

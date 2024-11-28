@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entries</title>
+    <link rel="stylesheet" href="styles/admin.css" />
+  </head>
+
+  <body>
+    <% if (data.length !== 0) { %>
+
+    <ul>
+      <% for (let i=0; i < data.length; i++) { %>
+      <div>
+        <li>Application Number: <%= data[i].id %>!</li>
+        <li>Last Name: <%= data[i].lastName %></li>
+        <li>Message: <%= data[i].message %></li>
+      </div>
+      <% } %>
+    </ul>
+    <% } else { %>
+    <p>No Data!</p>
+    <% } %>
+  </body>
+</html>

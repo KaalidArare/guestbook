@@ -1,0 +1,58 @@
+body {
+    background-color: whitesmoke;
+}
+#labels {
+    position: relative;
+    margin: auto 100px;
+    border: black;
+    background-color: white;
+    padding: 20px;
+}
+.form-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.form-group {
+    flex: 1;
+}
+
+fieldset {
+    border: 0;
+    padding: 1rem;
+}
+textarea {
+    border-radius: .25rem;
+    margin: 0rem 0rem 1rem 0rem; 
+    padding: .10rem;
+    width: 100%;
+}
+label, input, button, select {
+    margin: 5px 0;
+    font-weight: bold;
+    display: block; 
+}
+.err {
+    display: none;
+}
+#other {
+    display: none;
+}
+.check {
+    display: none;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+.checkbox-group label {
+    margin-right: 10px;
+}
+legend {
+    font-weight: bold;
+}
+h1 {
+    text-align: center;
+}
+button {
+    background-color: rgb(58, 209, 58);
+}
